@@ -55,6 +55,8 @@ namespace first_code_in_c_
             //•	Input your year of birth: 1999
             //•	Sami Ali 1999
 
+            string fname;
+            fname = Console.ReadLine();
 
 
 
