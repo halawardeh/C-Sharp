@@ -15,7 +15,7 @@ namespace first_code_in_c_
             //task #1 : 	Create console application that read string from user and print the same string
 
             //string name;
-            //name=Console.ReadLine();
+            //name = Console.ReadLine();
             //Console.WriteLine(name);
 
 
@@ -37,22 +37,23 @@ namespace first_code_in_c_
             //string name = "Hala Bani Hamad";
             //Console.WriteLine(name);
 
-            //char charactor= 'a';
+            //char charactor = 'a';
             //Console.WriteLine(charactor);
 
-            //bool isfemale= true;
+            //bool isfemale = true;
             //Console.WriteLine(isfemale);
 
             //int age = 23;
             //Console.WriteLine(age);
 
-            //const double number= 141088;
+            //const double number = 141088;
             //Console.WriteLine(number);
 
             //task #3 : 	Define array with name car that hold more than 3 kinds on cars, then print all the cars with the array length.
 
             //string[] cars = { "Kia", "Volvo", "Honday" };
-            //foreach (string car in cars) {
+            //foreach (string car in cars)
+            //{
             //    Console.WriteLine(car);
             //}
 
