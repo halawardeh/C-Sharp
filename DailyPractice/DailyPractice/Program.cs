@@ -209,10 +209,11 @@ namespace _19_01_2025
             double sum = 0;//sum of the indeces
 
 
-            while (num > 0) {
-            sum+= num%10;
-             num /=10;
-            
+            while (num > 0)
+            {
+                sum += num % 10;
+                num /= 10;
+
             }
 
 
