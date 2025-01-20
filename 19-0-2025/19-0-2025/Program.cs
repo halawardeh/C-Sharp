@@ -175,8 +175,8 @@ namespace _19_01_2025
 
         }
 
-        static double Sum(double num) //for example: 123.0
-        {
+        //static double Sum(double num) //for example: 123.0
+        //{
 
             //double sum = 0;//sum of the indeces
             //long numAsInt = (long)num; // 123.0 ---> 123
@@ -200,13 +200,13 @@ namespace _19_01_2025
 
             //return sum;
 
-        }
+        //}
 
 
         static long Sum1(long num) //for example: 123
         {
 
-            double sum = 0;//sum of the indeces
+            long sum = 0;//sum of the indeces
 
 
             while (num > 0) {
