@@ -93,11 +93,11 @@ namespace _19_01_2025
 
 
             //9.5 write a number calculate the sum of the number indeces
-            Console.WriteLine("Inter a number to claculate th sum of its indeces");
-            string num1asstr = Console.ReadLine(); //take the number from the user as string
-            long num1sasInt = long.Parse(num1asstr); // convert the number to double
+            //Console.WriteLine("Inter a number to claculate th sum of its indeces");
+            //string num1asstr = Console.ReadLine(); //take the number from the user as string
+            //long num1sasInt = long.Parse(num1asstr); // convert the number to double
 
-            Console.WriteLine(Sum1(num1sasInt));
+            //Console.WriteLine(Sum1(num1sasInt));
 
 
 
