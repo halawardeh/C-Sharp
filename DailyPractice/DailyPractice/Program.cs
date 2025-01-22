@@ -10,6 +10,16 @@ namespace _19_01_2025
         {
 
 
+
+            //6-	Write a program that prints the following number pattern using nested loops:
+            Console.WriteLine("*********************************************************************");
+            Console.WriteLine("Task 6");
+            Console.WriteLine("Enter a number to create a pattern for: ");
+            string number = Console.ReadLine();
+            int numberAsInt = Convert.ToInt32(number);
+            NumbersBattern(numberAsInt);
+
+
             //1-	Write a C# program that accepts a double input and converts it into an int. Display both values.
 
             //Console.WriteLine("write double number and will be converted to intger");
@@ -93,11 +103,11 @@ namespace _19_01_2025
 
 
             //9.5 write a number calculate the sum of the number indeces
-            Console.WriteLine("Inter a number to claculate th sum of its indeces");
-            string num1asstr = Console.ReadLine(); //take the number from the user as string
-            long num1sasInt = long.Parse(num1asstr); // convert the number to double
+            //Console.WriteLine("Inter a number to claculate th sum of its indeces");
+            //string num1asstr = Console.ReadLine(); //take the number from the user as string
+            //long num1sasInt = long.Parse(num1asstr); // convert the number to double
 
-            Console.WriteLine(Sum1(num1sasInt));
+            //Console.WriteLine(Sum1(num1sasInt));
 
 
 
@@ -135,142 +145,166 @@ namespace _19_01_2025
 
 
         }
-        static double ktom(double kilometer)
+
+        // Method 6 
+        static void NumbersBattern(int numberAsInt)
         {
-            return kilometer * 0.621371;
-        }
+            int copyI = 1;
 
-        static double htom(int h, int min)
-        {
-            return h * 60 + min;
-        }
-
-        static void mtoh(int min)
-        {
-
-            double hoursasf = min / 60.0;
-            long hoursasi = (long)hoursasf;
-            double rest = (hoursasf - hoursasi) * 60;
-
-            Console.WriteLine("the total time is " + hoursasi + " hours and " + rest + " minuts");
-        }
-
-        static void compare(int num1, int num2)
-        {
-            if (num1 == num2)
+            for (int i = 1; i <= numberAsInt; i++)
             {
-                Console.WriteLine("the first number is graeter");
-            }
-            else if (num1 > num2)
+                
+                for (int j = 1; j <= i; j++)
+                {
 
-            {
-                Console.WriteLine("the first number is graeter");
-            }
-
-            else
-            {
-                Console.WriteLine("the second number is graeter");
+                    Console.Write(copyI++ + " ");
+                }
+                Console.WriteLine("\n");
+               
             }
 
 
         }
 
-        static double Sum(double num) //for example: 123.0
-        {
-
-            //double sum = 0;//sum of the indeces
-            //long numAsInt = (long)num; // 123.0 ---> 123
-            //string numAsStr = Convert.ToString(numAsInt);//3 three indeces "123"
-            //double divresultAsF; //division result as float
-            //long divresultAsLong; // division result as long
-            //double lastIndex; //the number at the right of number
-            //double suntractResultsAsFloat = 0; // the subtract between the two numbers
-
-            //for (int i = 0; i < numAsStr.Length; i++) //in this example the length is three
-            //{
-            //    divresultAsF = num / 10.0; // 123.0 / 10.0 = 12.3
-            //    divresultAsLong = (long)divresultAsF; // 12
-            //    num = divresultAsLong; // num = 12
-            //    suntractResultsAsFloat = divresultAsF - divresultAsLong; //12.3 - 12 = 0.3
-            //    lastIndex = suntractResultsAsFloat * 10; // 0.3 * 10 = 3.0
-            //    lastIndex = (int)lastIndex; // 3.0 --> 3
-            //    sum += lastIndex; // 3
-
-            //}
-
-            //return sum;
-
-        }
-
-
-        static long Sum1(long num) //for example: 123
-        {
-
-            double sum = 0;//sum of the indeces
-
-
-            while (num > 0)
-            {
-                sum += num % 10;
-                num /= 10;
-
-            }
-
-
-            return sum;
-
-        }
 
 
 
+        //static double ktom(double kilometer)
+        //{
+        //    return kilometer * 0.621371;
+        //}
+
+        //static double htom(int h, int min)
+        //{
+        //    return h * 60 + min;
+        //}
+
+        //static void mtoh(int min)
+        //{
+
+        //    double hoursasf = min / 60.0;
+        //    long hoursasi = (long)hoursasf;
+        //    double rest = (hoursasf - hoursasi) * 60;
+
+        //    Console.WriteLine("the total time is " + hoursasi + " hours and " + rest + " minuts");
+        //}
+
+        //static void compare(int num1, int num2)
+        //{
+        //    if (num1 == num2)
+        //    {
+        //        Console.WriteLine("the first number is graeter");
+        //    }
+        //    else if (num1 > num2)
+
+        //    {
+        //        Console.WriteLine("the first number is graeter");
+        //    }
+
+        //    else
+        //    {
+        //        Console.WriteLine("the second number is graeter");
+        //    }
+
+
+        //}
+
+        //static double Sum(double num) //for example: 123.0
+        //{
+
+        //    //double sum = 0;//sum of the indeces
+        //    //long numAsInt = (long)num; // 123.0 ---> 123
+        //    //string numAsStr = Convert.ToString(numAsInt);//3 three indeces "123"
+        //    //double divresultAsF; //division result as float
+        //    //long divresultAsLong; // division result as long
+        //    //double lastIndex; //the number at the right of number
+        //    //double suntractResultsAsFloat = 0; // the subtract between the two numbers
+
+        //    //for (int i = 0; i < numAsStr.Length; i++) //in this example the length is three
+        //    //{
+        //    //    divresultAsF = num / 10.0; // 123.0 / 10.0 = 12.3
+        //    //    divresultAsLong = (long)divresultAsF; // 12
+        //    //    num = divresultAsLong; // num = 12
+        //    //    suntractResultsAsFloat = divresultAsF - divresultAsLong; //12.3 - 12 = 0.3
+        //    //    lastIndex = suntractResultsAsFloat * 10; // 0.3 * 10 = 3.0
+        //    //    lastIndex = (int)lastIndex; // 3.0 --> 3
+        //    //    sum += lastIndex; // 3
+
+        //    //}
+
+        //    //return sum;
+
+        //}
+
+
+        //static long Sum1(long num) //for example: 123
+        //{
+
+        //    double sum = 0;//sum of the indeces
+
+
+        //    while (num > 0)
+        //    {
+        //        sum += num % 10;
+        //        num /= 10;
+
+        //    }
+
+
+        //    return sum;
+
+        //}
 
 
 
-        static string rev(long num) //for example: 123
-        {
-            double sum = 0;
-            string sumAsStr = "";
-            long lastDigit;
-            while (num > 0)
-            {
-                sum += num % 10; // Get the last digit for summation
-                lastDigit = num % 10; // Get the last digit
-                sumAsStr += lastDigit; // results as string
-                num /= 10;       // Remove the last digit
-            }
-
-            return sumAsStr;
-        }
 
 
-        static void divisable(double num, double div)
-        {
-            if (num % div == 0)
-            { Console.WriteLine("Divisible"); }
-            else
-            {
-                Console.WriteLine(" Not Divisible");
-            }
 
-        }
+        //static string rev(long num) //for example: 123
+        //{
+        //    double sum = 0;
+        //    string sumAsStr = "";
+        //    long lastDigit;
+        //    while (num > 0)
+        //    {
+        //        sum += num % 10; // Get the last digit for summation
+        //        lastDigit = num % 10; // Get the last digit
+        //        sumAsStr += lastDigit; // results as string
+        //        num /= 10;       // Remove the last digit
+        //    }
 
-        static void middle(double num1, double num2, double num3)
-        {
-
-            if (num2 > num1 && num2 < num3) // 1 2 3 or 3 2 1
-                Console.WriteLine("the middle number is " + num2);
-
-            else if (num1 > num2 && num1 < num3 || num1 > num3 && num1 < num2) // 2 1 3 // 2 3 1
-            {
-                Console.WriteLine("the middle number is " + num1);
-            }
-            else if (num3 > num2 && num3 < num1 || num3 > num1 && num3 < num2) // 3 1 2 // 1 3 2
-            {
-                Console.WriteLine("the middle number is " + num3);
-            }
+        //    return sumAsStr;
+        //}
 
 
-        }
+        //static void divisable(double num, double div)
+        //{
+        //    if (num % div == 0)
+        //    { Console.WriteLine("Divisible"); }
+        //    else
+        //    {
+        //        Console.WriteLine(" Not Divisible");
+        //    }
+
+        //}
+
+        //static void middle(double num1, double num2, double num3)
+        //{
+
+        //    if (num2 > num1 && num2 < num3) // 1 2 3 or 3 2 1
+        //        Console.WriteLine("the middle number is " + num2);
+
+        //    else if (num1 > num2 && num1 < num3 || num1 > num3 && num1 < num2) // 2 1 3 // 2 3 1
+        //    {
+        //        Console.WriteLine("the middle number is " + num1);
+        //    }
+        //    else if (num3 > num2 && num3 < num1 || num3 > num1 && num3 < num2) // 3 1 2 // 1 3 2
+        //    {
+        //        Console.WriteLine("the middle number is " + num3);
+        //    }
+
+
+        //}
 
 
 

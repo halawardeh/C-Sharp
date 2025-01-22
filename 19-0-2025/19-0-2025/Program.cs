@@ -10,99 +10,99 @@ namespace _19_01_2025
         {
 
 
-            //1-	Write a C# program that accepts a double input and converts it into an int. Display both values.
-            Console.WriteLine("****************************** Task 1 *******************************");
-            Console.WriteLine("write double number and will be converted to intger");
-            string x;
-            x = Console.ReadLine();
-            double y = double.Parse(x);
-            Console.WriteLine((int)y);
+            ////1-	Write a C# program that accepts a double input and converts it into an int. Display both values.
+            //Console.WriteLine("****************************** Task 1 *******************************");
+            //Console.WriteLine("write double number and will be converted to intger");
+            //string x;
+            //x = Console.ReadLine();
+            //double y = double.Parse(x);
+            //Console.WriteLine((int)y);
 
 
-            //2-	Write a program that uses a Convert.ToString() method to convert a number into a string and concatenate it with a sentence.
-            Console.WriteLine("****************************** Task 2 *******************************");
-            Console.WriteLine("write a number and I will reprint it for you");
-            string userinput = Console.ReadLine();
-            Console.WriteLine("Your number is: " + userinput);
+            ////2-	Write a program that uses a Convert.ToString() method to convert a number into a string and concatenate it with a sentence.
+            //Console.WriteLine("****************************** Task 2 *******************************");
+            //Console.WriteLine("write a number and I will reprint it for you");
+            //string userinput = Console.ReadLine();
+            //Console.WriteLine("Your number is: " + userinput);
 
-            //3 - Create a string with a sentence. Use ToUpper() and ToLower() to display the uppercase and lowercase versions of the string.
-            Console.WriteLine("****************************** Task 3 *******************************");
-            Console.WriteLine("write a statments and I will reprint it in uppercase");
-            string userinput1 = Console.ReadLine();
-            string output = userinput1.ToUpperInvariant();
-            Console.WriteLine(output);
-
-
-            //  4 - Write a program that takes a user's full name as input and prints:
-            Console.WriteLine("****************************** Task 4 *******************************");
-            Console.WriteLine("enter your full name");
-            string userinput2 = Console.ReadLine();
-            int lnameindex = userinput2.IndexOf(" ");
-            string fname = userinput2.Substring(0, lnameindex);
-            string lname = userinput2.Substring(lnameindex + 1);
-            Console.WriteLine(fname + " " + lname);
-
-            //5-	Write a program that accepts two integers and prints the smaller of the two.
-            Console.WriteLine("****************************** Task 5 *******************************");
-            Console.WriteLine("enter two numbers and the smaller one between them will printed");
-            string strnum1 = Console.ReadLine();
-            string strnum2 = Console.ReadLine();
-            int num1 = int.Parse(strnum1);
-            int num2 = int.Parse(strnum2);
-            Console.WriteLine("smaller number is " + Math.Min(num1, num2));
+            ////3 - Create a string with a sentence. Use ToUpper() and ToLower() to display the uppercase and lowercase versions of the string.
+            //Console.WriteLine("****************************** Task 3 *******************************");
+            //Console.WriteLine("write a statments and I will reprint it in uppercase");
+            //string userinput1 = Console.ReadLine();
+            //string output = userinput1.ToUpperInvariant();
+            //Console.WriteLine(output);
 
 
-            //6- Write a method that converts kilometers per hour to miles per hour. Use this method in a program to convert and display the result
-            Console.WriteLine("****************************** Task 6 *******************************");
-            Console.WriteLine("Enter a number in kilopermeter and I will convert it to milepermeter");
-            Console.WriteLine(ktom(15) + "mph");
+            ////  4 - Write a program that takes a user's full name as input and prints:
+            //Console.WriteLine("****************************** Task 4 *******************************");
+            //Console.WriteLine("enter your full name");
+            //string userinput2 = Console.ReadLine();
+            //int lnameindex = userinput2.IndexOf(" ");
+            //string fname = userinput2.Substring(0, lnameindex);
+            //string lname = userinput2.Substring(lnameindex + 1);
+            //Console.WriteLine(fname + " " + lname);
+
+            ////5-	Write a program that accepts two integers and prints the smaller of the two.
+            //Console.WriteLine("****************************** Task 5 *******************************");
+            //Console.WriteLine("enter two numbers and the smaller one between them will printed");
+            //string strnum1 = Console.ReadLine();
+            //string strnum2 = Console.ReadLine();
+            //int num1 = int.Parse(strnum1);
+            //int num2 = int.Parse(strnum2);
+            //Console.WriteLine("smaller number is " + Math.Min(num1, num2));
+
+
+            ////6- Write a method that converts kilometers per hour to miles per hour. Use this method in a program to convert and display the result
+            //Console.WriteLine("****************************** Task 6 *******************************");
+            //Console.WriteLine("Enter a number in kilopermeter and I will convert it to milepermeter");
+            //Console.WriteLine(ktom(15) + "mph");
 
 
 
 
             //7-	Write a method that takes hours and minutes as input and returns the total number of minutes.
-            Console.WriteLine("****************************** Task 7 *******************************");
-            Console.WriteLine("Enter two values one for hours and another one for minuts");
+            //Console.WriteLine("****************************** Task 7 *******************************");
+            //Console.WriteLine("Enter two values one for hours and another one for minuts");
 
-            string hoursasstr = Console.ReadLine();
-            int hoursasint = int.Parse(hoursasstr);
+            //string hoursasstr = Console.ReadLine();
+            //int hoursasint = int.Parse(hoursasstr);
 
-            string minasstr = Console.ReadLine();
-            int minasint = int.Parse(minasstr);
+            //string minasstr = Console.ReadLine();
+            //int minasint = int.Parse(minasstr);
 
-            Console.WriteLine("the total minuts are :" + htom(hoursasint, minasint) + " minuts");
+            //Console.WriteLine("the total minuts are :" + htom(hoursasint, minasint) + " minuts");
 
 
             //8-	Write a method that accepts minutes as input and calculates the total number of hours and minutes.
-            Console.WriteLine("****************************** Task 8 *******************************");
-            Console.WriteLine("Enter the number of minuts and will presents as hours and minuts");
+            //Console.WriteLine("****************************** Task 8 *******************************");
+            //Console.WriteLine("Enter the number of minuts and will presents as hours and minuts");
 
-            string minutsasStr = Console.ReadLine();
-            int minutsasInt = int.Parse(minutsasStr);
-            mtoh(minutsasInt);
+            //string minutsasStr = Console.ReadLine();
+            //int minutsasInt = int.Parse(minutsasStr);
+            //mtoh(minutsasInt);
 
             //9-	Compare Two Numbers Write a program that prints:
-            Console.WriteLine("****************************** Task 9 Part 1 *******************************");
-            Console.WriteLine("Enter two numbers and I will compare between them");
+            //Console.WriteLine("****************************** Task 9 Part 1 *******************************");
+            //Console.WriteLine("Enter two numbers and I will compare between them");
 
-            string num1asstr = Console.ReadLine();
-            int num1sasInt = int.Parse(num1asstr);
+            //string num1asstr = Console.ReadLine();
+            //int num1sasInt = int.Parse(num1asstr);
 
-            string num2asstr = Console.ReadLine();
-            int num2sasInt = int.Parse(num2asstr);
+            //string num2asstr = Console.ReadLine();
+            //int num2sasInt = int.Parse(num2asstr);
 
-            compare(num1sasInt, num2sasInt);
+            //compare(num1sasInt, num2sasInt);
 
 
 
-            //9.5 write a number calculate the sum of the number indeces
-            Console.WriteLine("****************************** Task 5 Part 2 *******************************");
+            ////9.5 write a number calculate the sum of the number indeces
+            //Console.WriteLine("****************************** Task 5 Part 2 *******************************");
             
-            Console.WriteLine("Enter a number to claculate th sum of its indeces");
-            string num1asstr3 = Console.ReadLine(); //take the number from the user as string
-            long num1sasInt3 = long.Parse(num1asstr3); // convert the number to double
+            //Console.WriteLine("Enter a number to claculate th sum of its indeces");
+            //string num1asstr3 = Console.ReadLine(); //take the number from the user as string
+            //long num1sasInt3 = long.Parse(num1asstr3); // convert the number to double
 
-            Console.WriteLine(Sum1(num1sasInt3));
+            //Console.WriteLine(Sum1(num1sasInt3));
 
 
 

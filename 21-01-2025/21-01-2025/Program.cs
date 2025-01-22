@@ -14,29 +14,23 @@ namespace _21_01_2025
         {
 
 
-
-
-
-
-
-            // o Create an object from the Student class with the following values:
-            //	Name: "Ahmad"
-            //	Age: 22
-            //	Student ID: 1001
-            //o Call the GetDetails method for the object.
-
+            //Part 1
+            //Create an object from the Student class with the following values:
             //Console.WriteLine("get method with creating class for ahmed");
+
             //Student student1 = new Student();
             //student1.studentName = "Ahmed";
             //student1.studentAge = 22;
             //student1.studentId = 1001;
 
+
+            // // Call the GetDetails method for the object.
             //student1.GetDetails();
 
-            //	Accepts the name, age, and student ID as parameters.
-            //	Updates the class fields with the given values
-            Student student2 = new Student("hala", 12, 141088);
-            student2.GetDetails();
+            //	Accepts the name, age, and student ID as parameters.
+            //	Updates the class fields with the given values
+            //Student student2 = new Student("hala", 12, 141088);
+            //student2.GetDetails();
 
 
 
@@ -55,7 +49,7 @@ namespace _21_01_2025
 
 
 
-        class Student //create the student class
+        class Student //create the Student class
         {
 
 
@@ -63,7 +57,7 @@ namespace _21_01_2025
             const int MaxAge = 40; //o Add a constant named MaxAge to represent the maximum allowed age for a student(40 years).
 
             private string Name; //field
-            private string studentName //property
+            public string studentName //property
             {
                 get { return Name; }
                 set { Name = value; }
@@ -71,13 +65,13 @@ namespace _21_01_2025
 
             private int Age;//field
 
-            private int studentAge //proprty
+            public int studentAge //proprty
             {
                 get { return Age; }
                 set
                 {
 
-                    if (Age <= MinAge)
+                    if (Age <= MinAge) //Check if the age is acceptable or not
                     {
                         Age = MinAge;
                     }
@@ -94,25 +88,16 @@ namespace _21_01_2025
 
             private long Id;
 
-            private long studentId
+            public long studentId
             {
                 get { return Id; }
                 set { Id = value; }
 
             }
-            private string Email { get; set; }  //	Add an auto property named Email to represent the student’s email.
+            private string Email { get; set; }  //	Add an auto property named Email to represent the student’s email.
 
 
-
-
-
-
-
-
-
-
-
-            //o Add a method named GetDetails that displays a message containing the student’s name, age, and ID.
+            //oAdd a method named GetDetails that displays a message containing the student’s name, age, and ID.
             //GetDetails(); // displays a message containing the student’s name, age, and ID.
             public void GetDetails()
             {
@@ -122,10 +107,10 @@ namespace _21_01_2025
             }
 
 
-
-            //  o Add a constructor to the Student class that :
-            //	Accepts the name, age, and student ID as parameters.
-            //	Updates the class fields with the given values.
+            //Part2 
+            //Add a constructor to the Student class that :
+            //Accepts the name, age, and student ID as parameters.
+            //Updates the class fields with the given values.
 
             public Student(string name, int age, long id)
             {
@@ -134,7 +119,7 @@ namespace _21_01_2025
                 studentId = id;
             }
 
-            ~Student()
+            ~Student() // destrUctor
 
             {
                 Console.WriteLine("finished");
