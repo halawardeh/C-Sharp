@@ -68,8 +68,8 @@ namespace _22_01_2025
 
         class Vehicle
         {
-            public string Brand;
-            public string Model;
+            public string Brand { get; set; }
+            public string Model { get; set; }
 
             public void Start()
             {
