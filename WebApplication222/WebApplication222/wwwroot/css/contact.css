@@ -1,0 +1,309 @@
+:root {
+    --main-color: #6d7b8d;  /* Subtle gray with a hint of blue for a calming feel */
+    --second-color: #b3d0d9;  /* Soft, cool grayish-blue for gentle accents */
+    --highlight-color: #088178;  /* Deep green to stand out as a highlight */
+    --bg-gradient-start: #088178;  /* Starting color for gradient backgrounds */
+    --bg-gradient-end: #5f8e8f;  /* Ending color for gradient backgrounds */
+    --button-color: #088178;  /* Button color */
+    --text-color: #333333;  /* Soft dark text color for readability */
+    --light-text-color: #f0f0f0;  /* Light text for darker backgrounds */
+    --section-padding: 80px;  /* General padding to give more space */
+    --header-padding: 120px;  /* Hero header padding */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;  
+    color: var(--text-color);
+}
+
+/* Hero-style header section */
+header {
+    text-align: center;
+    padding: var(--header-padding) 20px;
+    /* background: linear-gradient(to bottom, var(--bg-gradient-start), var(--bg-gradient-end)); */
+    color: var(--light-text-color);
+    position: relative;
+    z-index: 1;
+    /* background: #088178ad; */
+}
+
+header h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);  /* Slightly softer shadow */
+}
+
+header p {
+    font-size: 1.5rem;
+    color: var(--light-text-color);
+    margin-top: 0;
+    font-weight: 300;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);  /* Softer shadow for clarity */
+}
+
+/* Start Header Navigation */
+ul {
+    list-style: none;
+}
+
+.navbar {
+    padding: 0px;
+}
+
+.navbar-brand {
+    margin-left: 7%;
+    margin-top: 5px;
+}
+
+/* Navbar collapse */
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+
+#navbarNav ul li {
+    transition: transform 0.2s ease-in;
+    font-weight: 600;
+}
+
+#navbarNav ul li:hover {
+    transform: scale(1.1);
+}
+
+#navbarNav ul li a {
+    color: #fff;
+}
+
+/* Buttons */
+#register, #login {
+    background-color: var(--main-color);
+    color: var(--main-color);
+    padding: 5px;
+    border-radius: 15%;
+    border: 1px solid #fff;
+    margin-top: -8px;
+}
+
+#register:hover, #login:hover {
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+/* Contact Section */
+.container-contact {
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    box-shadow: 1px 2px 3px var(--highlight-color);
+    border-radius: 10px;
+    width: 80%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+}
+header{
+    /* background: url('https://i.pinimg.com/236x/7a/01/b7/7a01b7ee32cf45984b0edb79889ddf9a.jpg') no-repeat center center/cover; */
+    opacity: 85%;
+}
+
+.social-icons .fab:before {
+    font-family: "Font Awesome 6 Brands" !important;
+}
+
+.contact-info {
+    width: 40%;
+    background: var(--highlight-color);
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-info h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-form {
+    width: 60%;
+    padding: 30px;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;  /* Soft background for form fields */
+}
+
+.contact-form button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--highlight-color);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    background: linear-gradient(45deg, var(--highlight-color), rgb(204, 204, 204));
+    color: #333;
+}
+
+/* Map button */
+.map-button {
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+
+.map-button:hover {
+    color: #fff;
+    background: linear-gradient(45deg, var(--highlight-color), #cccccc);
+}
+
+/* Social Media */
+.social-media-section {
+    position: relative;
+    text-align: center;
+    background: #b9d0c780;
+        color: white;
+    padding: 80px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.social-media-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgb(136 134 117 / 28%); */
+    z-index: 1;
+}
+.social-media-section h2 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+}
+
+.social-icons .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border: 5px solid white;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    transition: transform 0.3s ease-in-out;
+    background: #088178;
+    backdrop-filter: blur(15px);
+}
+
+.social-icons .icon:hover {
+    transform: scale(1.1);
+}
+
+.social-icons .icon i {
+    margin-bottom: 10px;
+}
+
+.facebook i { color: #0028d7; }   /* Soft purple */
+.twitter i { color: #1da1f2; }    /* Sky blue */
+.instagram i { color: #f1356d; }  /* Warm pink */
+.youtube i { color: #ff0000; }    /* Bright red */
+
+.icon p {
+    margin: 5px 0 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.icon span {
+    font-size: 0.85rem;
+    /* color: #888888; */
+}
+
+/* Media Queries */
+@media screen and (max-width: 426px) {
+    .navbar-collapse {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .contact-form {
+        width: 102%;
+        padding: 47px;
+    }
+}

@@ -1,0 +1,178 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+    ViewData["Title"] = "about Page";
+}
+
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/aboutUsP.css" />
+
+    <style>
+        /* تنسيق الصفحة */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* سكرول الصور الأفقي مع العناوين */
+        .scrolling-images {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+            height: 400px;
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .image-slider {
+            display: flex;
+            width: 300%;
+            transition: transform 1s ease-in-out;
+        }
+
+            .image-slider img {
+                width: 33.33%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+        .scrolling-images h2 {
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            font-size: 32px;
+            color: white;
+            font-weight: bold;
+            z-index: 2;
+        }
+
+        /* تأثيرات عند التمرير */
+        .section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 50px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+            .section.show {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            .section img {
+                width: 30%;
+                height: auto;
+                object-fit: cover;
+            }
+
+        .section-text {
+            width: 50%;
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 40px;
+            color: #088178;
+            margin-bottom: 65px;
+            text-align: center;
+            text-shadow: 0 3px 5px gray;
+        }
+
+        .section p {
+            font-size: x-large;
+            color: #666;
+            line-height: 1.6;
+            text-align: center;
+            text-shadow: 0 3px 8px gray;
+        }
+
+   
+    </style>
+}
+
+
+
+
+
+
+<div class="container">
+    <!-- سكرول الصور الأفقي مع العناوين -->
+    <div class="scrolling-images">
+        <div class="image-slider">
+            <img src="https://i.pinimg.com/474x/dd/8f/5c/dd8f5ce4d2a6316a2ea19f30821a9002.jpg" alt="Image 1">
+            <img src="https://i.pinimg.com/736x/4f/03/c7/4f03c7a30dc96877ee0c520be6677d8a.jpg" alt="Image 2">
+            <img src="https://i.pinimg.com/736x/b7/0f/58/b70f581bb130bfa608fe56e6931fe1f3.jpg" alt="Image 3">
+        </div>
+    </div>
+    <h2>Lova: Your Best Choice For Shopping!</h2>
+    <!-- القسم الأول: النص مع الصورة -->
+    <div class="section">
+        <img src="/img1/fastion1-removebg-preview.png" alt="Image 1">
+        <div class="section-text">
+            <h2>Welcome to Lova</h2>
+            <p>Where fashion meets purpose. Our vision is to inspire and enhance everyday life through clothing that transforms not only how you look but how you feel.</p>
+        </div>
+    </div>
+
+    <!-- القسم الثاني: النص مع الصورة -->
+    <div class="section">
+        <div class="section-text">
+            <h2>Why Choose Lova?</h2>
+            <p>At Lova, we believe fashion is more than just clothing—it's a reflection of individuality and confidence. Our journey began with a passion for creating pieces that resonate with style and purpose.</p>
+        </div>
+        <img src="/img1/fastion4-removebg-preview.png" alt="Image 2">
+    </div>
+
+    <!-- القسم الثالث: النص مع الصورة -->
+    <div class="section">
+        <img src="/img1/fastion3-removebg-preview.png" alt="Image 3">
+        <div class="section-text">
+            <h2>Our Mission</h2>
+            <p>We are dedicated to crafting high-quality pieces that blend timeless elegance with modern trends, empowering you to express your unique style with confidence.</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<script>
+    // إضافة تأثير ظهور النصوص والصور عند التمرير
+    document.addEventListener("DOMContentLoaded", function () {
+      const sections = document.querySelectorAll('.section');
+
+      function checkVisibility() {
+        sections.forEach(function (section) {
+          const rect = section.getBoundingClientRect();
+          if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+            section.classList.add('show');
+          }
+        });
+      }
+
+      // مراقبة التمرير
+      window.addEventListener('scroll', checkVisibility);
+      // التحقق عند تحميل الصفحة
+      checkVisibility();
+    });
+</script>
+
+
+@{
+    ViewData["Title"] = "about";
+}

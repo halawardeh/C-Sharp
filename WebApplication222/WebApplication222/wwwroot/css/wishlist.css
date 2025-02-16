@@ -1,0 +1,19 @@
+.review{
+    display: grid;
+    grid-template-columns: auto ;
+    background-color: #088178;
+    border: 1px solid #088178;
+    color: white;
+    padding-left: 3vw;
+    column-gap: 70%;
+}
+.main-container {
+    max-width: 70%;
+    margin: 0 auto;
+    margin-top: 7vw;
+    border: 1px solid gray;
+    border-radius: 30px;
+}
+.woman-product .actions {
+    height: 45%;
+}

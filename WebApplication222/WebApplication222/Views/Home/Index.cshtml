@@ -1,0 +1,799 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/css/style1.css" />
+}
+
+
+
+
+<!-- Hero -->
+<section id="hero">
+    <h4>Trade-in-offer</h4>
+    <h2 style="
+             text-align: unset;
+             margin: 0%;
+            margin-top: 0%;
+             text-shadow: unset;
+        ">
+        Super value deals
+    </h2>
+    <h1>On all products</h1>
+    <p>Save more with coupons & up to 70% off!</p>
+    <button onclick="window.location.href='Stores.html'">Shop Now</button>
+</section>
+
+<!-- Categories section -->
+<section>
+    <h2>Categories</h2>
+    <div class="allCategories">
+
+        <div class="Categories">
+            <div class="catigory">
+                <img class="catImg" src="/img1/woman-removebg-preview (2).png" alt="">
+                <h3 class="catText">Woman</h4>
+            </div>
+            <div class="catigory" id="men" onclick="window.location.href='menCatigory.html'">
+                <img class="catImg" src="/img1/men-removebg-preview.png" alt="">
+                <h3 class="catText">Men</h4>
+            </div>
+            <div class="catigory">
+                <img class="catImg" src="/img1/kids-removebg-preview.png" alt="">
+                <h3 class="catText">Kids</h4>
+            </div>
+            <div class="catigory">
+                <img class="catImg" src="/img1/sport-removebg-preview (1).png" alt="">
+                <h3 class="catText">Sport</h4>
+            </div>
+            <div class="catigory">
+                <img class="catImg" src="/img1/baby-removebg-preview.png" alt="">
+                <h3 class="catText">Baby & Maternity</h4>
+            </div>
+        </div>
+        <div class="Categories">
+            <div class="catigory">
+                <img class="catImg" src="/img1/buatey-removebg-preview.png" alt="">
+                <h3 class="catText">Beauty & Health</h4>
+            </div>
+            <div class="catigory">
+                <img class="catImg" src="/img1/bages-removebg-preview.png" alt="">
+                <h3 class="catText">Bags & Luggage</h4>
+            </div>
+            <div class="catigory">
+                <img class="catImg" src="/img1/Shoes-removebg-preview.png" alt="">
+                <h3 class="catText">Shoes</h4>
+            </div>
+            <div class="catigory">
+                <img class="catImg" src="/img1/jewelery-removebg-preview.png" alt="">
+                <h3 class="catText">Accessories</h4>
+            </div>
+            <div class="catigory">
+                <img class="catImg" src="/img1/modest-removebg-preview.png" alt="">
+                <h3 class="catText">Modest</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- adds section -->
+<section id="banner2" class="section-p1">
+    <div class="banner-box">
+        <h4>crazy deals</h4>
+        <h2>buy 1 get 1 free</h2>
+        <span>The best classic dress is on slae aty cara</span>
+        <button class="white">Learn More</button>
+    </div>
+    <div class="banner-box banner-box2">
+        <h4>Spring/Summer</h4>
+        <h2>Upcomming Season</h2>
+        <span>The best classic dress is on slae aty cara</span>
+        <button class="white">Collection </button>
+    </div>
+</section>
+
+<!-- woman section in home page -->
+<section>
+    <h2>Woman</h2>
+    <div class="woman-container">
+        <div class="woman-sidebar">
+            <ul>
+                <li>Islamic Clothing</li>
+                <li>Women's Dresses</li>
+                <li>Women's Shirts</li>
+                <li>Women's Bottoms</li>
+                <li>Women's Head Cover</li>
+                <li>Women's Pajamas</li>
+                <li>More</li>
+            </ul>
+        </div>
+
+        <div class="woman-products">
+            <div class="woman-tabs">
+                <button class="active">New Arrivals</button>
+                <button>Best Sellers</button>
+                <button>Special Products</button>
+            </div>
+
+            <div class="woman-product-list">
+                <div class="woman-product">
+                    <img src="/img/Tshirt1.png" alt="Product 1">
+                    <h4>ROMWE Kawaii Women's Cute Cloud Print...</h4>
+
+                    <div class="priceSold">
+                        <p class="price">£50.08</p>
+                        <p>90+ Sold</p>
+                    </div>
+                    <p class="rating">★★★★★</p>
+                    <div class="actions">
+                        <button class="button2">
+                            <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24"
+                                 xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                                <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z">
+                                </path>
+                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                                </path>
+                            </svg>
+                            <p class="text">Add to cart</p>
+                        </button>
+                        <button>
+                            <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24"
+                                 xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                                <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z">
+                                </path>
+                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="woman-product">
+                    <div class="discount">-10%</div>
+                    <img src="/img/Tshirt2.png" alt="Product 2">
+                    <h4>ROMWE Kawaii Women's Cute Cloud Print...</h4>
+                    <div class="priceSold">
+                        <p class="price">£50.08</p>
+                        <p>90+ Sold</p>
+                    </div>
+                    <p class="rating">★★★★★</p>
+                    <div class="actions">
+                        <div class="actions">
+                            <button class="button2">
+                                <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24"
+                                     xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                                    <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z">
+                                    </path>
+                                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                                    </path>
+                                </svg>
+                                <p class="text">Add to cart</p>
+                            </button>
+                            <button>
+                                <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24"
+                                     xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                                    <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z">
+                                    </path>
+                                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="woman-product">
+                    <img src="/img/Tshirt3.png" alt="Product 3">
+                    <h4>ROMWE Kawaii Women's Cute Cloud Print...</h4>
+                    <div class="priceSold">
+                        <p class="price">£50.08</p>
+                        <p>90+ Sold</p>
+                    </div>
+                    <p class="rating">★★★★★</p>
+                    <div class="actions">
+                        <div class="actions">
+                            <button class="button2">
+                                <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24"
+                                     xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                                    <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z">
+                                    </path>
+                                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                                    </path>
+                                </svg>
+                                <p class="text">Add to cart</p>
+                            </button>
+                            <button>
+                                <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24"
+                                     xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                                    <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z">
+                                    </path>
+                                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+<br>
+
+
+<!-- superDeal section in homepage -->
+<section>
+    <div class="grayLine"></div>
+    <!-- <h2>superDeal</h2> -->
+    <h2><img src="/img1/superDeals.png" alt=""></h2>
+    <div class="woman-container">
+
+        <div class="woman-products">
+            <div class="sales-product-list">
+                <div class="woman-product" id="ff" class="twoParts" style="border: none;">
+                    <div class="product_Discount">
+                        <div class="discount">-10%</div>
+                        <img style="height: 100%;" src="https://i.pinimg.com/236x/23/1a/54/231a54300ef1b65015a096115ec16831.jpg" alt="Product 2">
+                    </div>
+                    <div>
+                        <h4>ROMWE Kawaii Women's...</h4>
+                        <div class="priceSold">
+                            <p class="price" id="redPrice">£50.08</p>
+                            <p class="oldPrice">£ 35.08</p>
+                        </div>
+                        <p class="rating">★★★★★</p>
+                        <div class="actions">
+                            <div class="actions">
+                                <button class="button2">
+                                    <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24"
+                                         xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                                        <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z">
+                                        </path>
+                                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                                        </path>
+                                    </svg>
+                                    <p class="text">Add to cart</p>
+                                </button>
+                                <button>
+                                    <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24"
+                                         xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                                        <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z">
+                                        </path>
+                                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="woman-product" id="ff" class="twoParts" style="border: none;">
+                    <div class="product_Discount">
+                        <div class="discount">-10%</div>
+                        <img style="height: 100%;" src="https://i.pinimg.com/474x/aa/00/2d/aa002dc690312162ccd48d34e4669876.jpg" alt="Product 2">
+                    </div>
+                    <div>
+                        <h4>ROMWE Kawaii Women's...</h4>
+                        <div class="priceSold">
+                            <p class="price" id="redPrice">£50.08</p>
+                            <p class="oldPrice">£ 35.08</p>
+                        </div>
+                        <p class="rating">★★★★★</p>
+                        <div class="actions">
+                            <div class="actions">
+                                <button class="button2">
+                                    <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24"
+                                         xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                                        <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z">
+                                        </path>
+                                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                                        </path>
+                                    </svg>
+                                    <p class="text">Add to cart</p>
+                                </button>
+                                <button>
+                                    <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24"
+                                         xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                                        <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z">
+                                        </path>
+                                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="woman-product" id="ff" class="twoParts" style="border: none;">
+                    <div class="product_Discount">
+                        <div class="discount">-10%</div>
+                        <img style="height: 100%;" src="https://i.pinimg.com/236x/ff/15/5a/ff155aef11a6d48cebd60b871cd91a9c.jpg" alt="Product 2">
+                    </div>
+                    <div>
+                        <h4>ROMWE Kawaii Women's...</h4>
+                        <div class="priceSold">
+                            <p class="price" id="redPrice">£50.08</p>
+                            <p class="oldPrice">£ 35.08</p>
+                        </div>
+                        <p class="rating">★★★★★</p>
+                        <div class="actions">
+                            <div class="actions">
+                                <button class="button2">
+                                    <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24"
+                                         xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                                        <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z">
+                                        </path>
+                                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                                        </path>
+                                    </svg>
+                                    <p class="text">Add to cart</p>
+                                </button>
+                                <button>
+                                    <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24"
+                                         xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                                        <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z">
+                                        </path>
+                                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="woman-product" id="ff" class="twoParts" style="border: none;">
+                    <div class="product_Discount">
+                        <div class="discount">-10%</div>
+                        <img style="height: 100%;" src="https://i.pinimg.com/236x/d2/d0/b4/d2d0b4a90a1802affae099b373872ae1.jpg" alt="Product 2">
+                    </div>
+                    <div>
+                        <h4>ROMWE Kawaii Women's...</h4>
+                        <div class="priceSold">
+                            <p class="price" id="redPrice">£50.08</p>
+                            <p class="oldPrice">£ 35.08</p>
+                        </div>
+                        <p class="rating">★★★★★</p>
+                        <div class="actions">
+                            <div class="actions">
+                                <button class="button2">
+                                    <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24"
+                                         xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                                        <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z">
+                                        </path>
+                                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                                        </path>
+                                    </svg>
+                                    <p class="text">Add to cart</p>
+                                </button>
+                                <button>
+                                    <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24"
+                                         xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                                        <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z">
+                                        </path>
+                                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- From Uiverse.io by aCHEN-design -->
+    <div class="nextStores">
+        <button class="button2">
+            <p class="text" style="font-size: large;">Show more</p>
+        </button>
+    </div>
+</section>
+
+
+
+<!-- Top trends section -->
+
+<section>
+    <div class="grayLine"></div>
+    <h2>Top Trends</h2>
+    <div class="woman-container">
+
+        <div class="woman-products">
+            <div class="sales-product-list">
+                <div class="woman-product" id="ff" class="twoParts" style="border: none;">
+                    <div class="product_Discount">
+                        <img style="height: 100%;" src="https://i.pinimg.com/236x/9b/35/13/9b3513c3c151ab66e66e10a2c4237ce3.jpg" alt="Product 2">
+                    </div>
+                    <div>
+                        <h4>ROMWE Kawaii Women's...</h4>
+                        <div class="priceSold">
+                            <p class="price">£50.08</p>
+                            <p>90+ Sold</p>
+                        </div>
+                        <p class="rating">★★★★★</p>
+                        <div class="actions">
+                            <div class="actions">
+                                <button class="button2">
+                                    <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24"
+                                         xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                                        <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z">
+                                        </path>
+                                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                                        </path>
+                                    </svg>
+                                    <p class="text">Add to cart</p>
+                                </button>
+                                <button>
+                                    <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24"
+                                         xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                                        <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z">
+                                        </path>
+                                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="woman-product" id="ff" class="twoParts" style="border: none;">
+                    <div class="product_Discount">
+                        <!-- <div class="discount">-10%</div> -->
+                        <img style="height: 100%;" src="https://i.pinimg.com/236x/06/15/74/06157414b477af088442c4662ca4df80.jpg" alt="Product 2">
+                    </div>
+                    <div>
+                        <h4>ROMWE Kawaii Women's...</h4>
+                        <div class="priceSold">
+                            <p class="price">£50.08</p>
+                            <p>90+ Sold</p>
+                        </div>
+                        <p class="rating">★★★★★</p>
+                        <div class="actions">
+                            <div class="actions">
+                                <button class="button2">
+                                    <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24"
+                                         xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                                        <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z">
+                                        </path>
+                                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                                        </path>
+                                    </svg>
+                                    <p class="text">Add to cart</p>
+                                </button>
+                                <button>
+                                    <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24"
+                                         xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                                        <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z">
+                                        </path>
+                                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="woman-product" id="ff" class="twoParts" style="border: none;">
+                    <div class="product_Discount">
+                        <div class="discount">-10%</div>
+                        <img style="height: 100%;" src="https://i.pinimg.com/236x/6d/d8/e4/6dd8e45a93becc8c7658ca673da5cfc6.jpg" alt="Product 2">
+                    </div>
+                    <div>
+                        <h4>ROMWE Kawaii Women's...</h4>
+                        <div class="priceSold">
+                            <p class="price">£50.08</p>
+                            <p>90+ Sold</p>
+                        </div>
+                        <p class="rating">★★★★★</p>
+                        <div class="actions">
+                            <div class="actions">
+                                <button class="button2">
+                                    <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24"
+                                         xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                                        <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z">
+                                        </path>
+                                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                                        </path>
+                                    </svg>
+                                    <p class="text">Add to cart</p>
+                                </button>
+                                <button>
+                                    <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24"
+                                         xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                                        <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z">
+                                        </path>
+                                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="woman-product" id="ff" class="twoParts" style="border: none;">
+                    <div class="product_Discount">
+                        <!-- <div class="discount">-10%</div> -->
+                        <img style="height: 100%;" src="https://i.pinimg.com/236x/26/cc/7f/26cc7f2d64efdab761a93c692347cee8.jpg" alt="Product 2">
+                    </div>
+                    <div>
+                        <h4>ROMWE Kawaii Women's...</h4>
+                        <div class="priceSold">
+                            <p class="price">£50.08</p>
+                            <p>90+ Sold</p>
+                        </div>
+                        <p class="rating">★★★★★</p>
+                        <div class="actions">
+                            <div class="actions">
+                                <button class="button2">
+                                    <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24"
+                                         xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                                        <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z">
+                                        </path>
+                                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                                        </path>
+                                    </svg>
+                                    <p class="text">Add to cart</p>
+                                </button>
+                                <button>
+                                    <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24"
+                                         xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                                        <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z">
+                                        </path>
+                                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- From Uiverse.io by aCHEN-design -->
+    <div class="nextStores">
+        <button class="button2">
+            <p class="text" style="font-size: large;">Show more</p>
+        </button>
+    </div>
+</section>
+
+
+<!--Modest section -->
+<section>
+    <div class="grayLine"></div>
+    <h2>Modest</h2>
+    <div class="woman-container" style="margin: 0; padding: 0 0;">
+
+        <div class="woman-products">
+            <div class="sales-product-list" style="
+                grid-template-columns: repeat(5, 1fr);
+                 gap: 0px;
+            ">
+                <div class="woman-product" id="ff" class="twoParts"
+                     style="border: none;grid-template-rows: repeat(1, 1fr);">
+                    <div class="product_Discount">
+                        <!-- <div class="discount">-10%</div> -->
+                        <img style="height: 100%;" src="/img1/modest1.png" alt="Product 2">
+                    </div>
+                    <div>
+                        <h4>ROMWE Kawai...</h4>
+                        <div>
+                            <p class="price">£50.08</p>
+                            <!-- <p>90+ Sold</p> -->
+                        </div>
+                        <!-- <p class="rating">★★★★★</p> -->
+                        <div class="actions">
+                            <div class="actions">
+                                <button class="button2">
+                                    <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24"
+                                         xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                                        <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z">
+                                        </path>
+                                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                                        </path>
+                                    </svg>
+                                    <p class="text">Add to cart</p>
+                                </button>
+                                <!-- <button>
+                                    <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24"
+                                        xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                                        <path
+                                            d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z">
+                                        </path>
+                                        <path
+                                            d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                                        </path>
+                                    </svg>
+                                </button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="woman-product" id="ff" class="twoParts"
+                     style="border: none;grid-template-rows: repeat(1, 1fr);">
+                    <div class="product_Discount">
+                        <!-- <div class="discount">-10%</div> -->
+                        <img style="height: 100%;" src="/img1/modest2.png" alt="Product 2">
+                    </div>
+                    <div>
+                        <h4>ROMWE Kawai...</h4>
+                        <div>
+                            <p class="price">£50.08</p>
+                            <!-- <p>90+ Sold</p> -->
+                        </div>
+                        <!-- <p class="rating">★★★★★</p> -->
+                        <div class="actions">
+                            <div class="actions">
+                                <button class="button2">
+                                    <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24"
+                                         xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                                        <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z">
+                                        </path>
+                                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                                        </path>
+                                    </svg>
+                                    <p class="text">Add to cart</p>
+                                </button>
+                                <!-- <button>
+                                    <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24"
+                                        xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                                        <path
+                                            d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z">
+                                        </path>
+                                        <path
+                                            d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                                        </path>
+                                    </svg>
+                                </button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="woman-product" id="ff" class="twoParts"
+                     style="border: none;grid-template-rows: repeat(1, 1fr);">
+                    <div class="product_Discount">
+                        <!-- <div class="discount">-10%</div> -->
+                        <img onclick="window.location.href='Product_Details.html'" style="height: 100%;" src="/img1/modest3.png" alt="Product 2">
+                    </div>
+                    <div>
+                        <h4>ROMWE Kawai...</h4>
+                        <div>
+                            <p class="price">£50.08</p>
+                            <!-- <p>90+ Sold</p> -->
+                        </div>
+                        <!-- <p class="rating">★★★★★</p> -->
+                        <div class="actions">
+                            <div class="actions">
+                                <button class="button2">
+                                    <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24"
+                                         xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                                        <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z">
+                                        </path>
+                                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                                        </path>
+                                    </svg>
+                                    <p class="text">Add to cart</p>
+                                </button>
+                                <!-- <button>
+                                    <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24"
+                                        xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                                        <path
+                                            d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z">
+                                        </path>
+                                        <path
+                                            d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                                        </path>
+                                    </svg>
+                                </button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="woman-product" id="ff" class="twoParts"
+                     style="border: none;grid-template-rows: repeat(1, 1fr);">
+                    <div class="product_Discount">
+                        <!-- <div class="discount">-10%</div> -->
+                        <img style="height: 100%;" src="/img1/modest4.png" alt="Product 2">
+                    </div>
+                    <div>
+                        <h4>ROMWE Kawai...</h4>
+                        <div>
+                            <p class="price">£50.08</p>
+                            <!-- <p>90+ Sold</p> -->
+                        </div>
+                        <!-- <p class="rating">★★★★★</p> -->
+                        <div class="actions">
+                            <div class="actions">
+                                <button class="button2">
+                                    <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24"
+                                         xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                                        <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z">
+                                        </path>
+                                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                                        </path>
+                                    </svg>
+                                    <p class="text">Add to cart</p>
+                                </button>
+                                <!-- <button>
+                                    <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24"
+                                        xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                                        <path
+                                            d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z">
+                                        </path>
+                                        <path
+                                            d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                                        </path>
+                                    </svg>
+                                </button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="woman-product" id="ff" class="twoParts"
+                     style="border: none;grid-template-rows: repeat(1, 1fr);">
+                    <div class="product_Discount">
+                        <!-- <div class="discount">-10%</div> -->
+                        <img style="height: 100%;" src="/img1/modest5.png" alt="Product 2">
+                    </div>
+                    <div>
+                        <h4>ROMWE Kawai...</h4>
+                        <div>
+                            <p class="price">£50.08</p>
+                            <!-- <p>90+ Sold</p> -->
+                        </div>
+                        <!-- <p class="rating">★★★★★</p> -->
+                        <div class="actions">
+                            <div class="actions">
+                                <button class="button2">
+                                    <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24"
+                                         xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                                        <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z">
+                                        </path>
+                                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                                        </path>
+                                    </svg>
+                                    <p class="text">Add to cart</p>
+                                </button>
+                                <!-- <button>
+                                    <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24"
+                                        xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                                        <path
+                                            d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z">
+                                        </path>
+                                        <path
+                                            d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                                        </path>
+                                    </svg>
+                                </button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- From Uiverse.io by aCHEN-design -->
+    <div class="nextStores" style="margin: 5%;">
+        <button class="button2">
+            <p class="text" style="font-size: large;">Show more</p>
+        </button>
+    </div>
+</section>
+
+
+
+
+@section Scripts {
+    <script src="~/js/index.js"></script>
+}
+
+@{
+    ViewData["Title"] = "Home";
+}

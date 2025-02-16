@@ -1,0 +1,349 @@
+.review {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #088178;
+    border: 1px solid #088178;
+    color: white;
+    padding-left: 3vw;
+    column-gap: 70%;
+    
+}
+body {
+    line-height: unset !important;
+ 
+}
+.main-container {
+    max-width: 70%;
+    margin: 0 auto;
+    margin-top: 7vw;
+    border: 1px solid gray;
+    border-radius: 30px;
+}
+
+.woman-product .actions {
+    height: 45%;
+}
+
+.woman-product {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    margin: 0 5%;
+}
+
+.sales-product-list1 {
+    display: grid;
+    /* grid-template-rows: repeat(4, 1fr) !important; */
+}
+
+
+.product_Discount {
+    border: unset;
+    display: grid;
+    grid-template-columns: auto auto;
+    vertical-align: middle;
+}
+
+#twoCol {
+    /* margin-top: 2vw; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 12vw;
+}
+
+.woman-product {
+    border-bottom: 1px solid gray;
+}
+
+.woman-product .price {
+    margin: 20px 10px;}
+
+.woman-product h4 {
+    margin-top: 1vw;
+    color: gray;
+    text-align: left;
+    font-size: large;
+}
+
+.chooseQty {
+    margin-top: 6.5vw;
+}
+
+.woman-product .price {
+    text-align: left;
+    color: #088178;
+}
+
+/* qty */
+.qty-input {
+    color: #000;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.qty-input .product-qty,
+.qty-input .qty-count {
+    background: transparent;
+    color: #088178;
+    border: none;
+    display: inline-block;
+    min-width: 0;
+    height: 2.5rem;
+    line-height: 1;
+}
+
+.qty-input .product-qty:focus,
+.qty-input .qty-count:focus {
+    outline: none;
+}
+
+.qty-input .product-qty {
+    width: 1.5vw;
+    min-width: 0;
+    display: inline-block;
+    text-align: center;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    font-weight: normal;
+}
+
+.qty-input .product-qty::-webkit-outer-spin-button,
+.qty-input .product-qty::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.qty-input .qty-count {
+    padding: 0;
+    cursor: pointer;
+    width: 2.5rem;
+    font-size: 1.25em;
+    text-indent: -100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.qty-input .qty-count:before,
+.qty-input .qty-count:after {
+    content: "";
+    height: 1px;
+    width: 7px;
+    position: absolute;
+    display: block;
+    background: #088178;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: small;
+}
+
+.qty-input .qty-count--minus {
+    border-right: 1px solid #e2e2e2;
+}
+
+.qty-input .qty-count--add {
+    border-left: 1px solid #e2e2e2;
+}
+
+.qty-input .qty-count--add:after {
+    transform: rotate(90deg);
+}
+
+.qty-input .qty-count:disabled {
+    color: #088178;
+    background: #f2f2f2;
+    cursor: not-allowed;
+    border-color: transparent;
+}
+
+.qty-input .qty-count:disabled:before,
+.qty-input .qty-count:disabled:after {
+    background: #ccc;
+}
+
+
+.qty-input {
+    border-radius: 4px;
+    /* box-shadow: 0 1em 2em -0.9em rgba(0, 0, 0, 0.7); */
+    transform: scale(1.5);
+    width: 5vw;
+    height: 1.5vw;
+    margin: -1.5vw 5vw;
+    border: 1px solid #088178;
+    border-radius: 30px;
+}
+
+
+
+#twoCol1 {
+    margin-top: 2vw;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+
+.totalPrice {
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.nextStores1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-bottom: 5%; */
+}
+
+.checkbox-wrapper:hover .check {
+    stroke-dashoffset: 0;
+}
+
+.checkbox-wrapper {
+    position: relative;
+    top: 50px;
+    width: 25px;
+    height: 25px;
+    margin: 0 auto; /* Center horizontally */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Horizontally centers content */
+    align-items: center; /* Vertically centers content */
+    margin: 0 auto; /* Centering wrapper */
+}
+.checkbox-wrapper input[type="checkbox"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    margin: 0;
+    opacity: 0;
+    -appearance: none;
+    /* -webkit-appearance: none; */
+}
+.checkbox-wrapper svg {
+    width: 100%; /* Ensure the SVG adjusts to the size of the checkbox */
+    height: 100%;
+}
+.checkbox-wrapper .background {
+    fill: #055555;
+    transition: ease all 0.6s;
+    -webkit-transition: ease all 0.6s;
+}
+
+.checkbox-wrapper .stroke {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    stroke-width: 2px;
+    stroke-dashoffset: 100;
+    stroke-dasharray: 100;
+    transition: ease all 0.6s;
+    -webkit-transition: ease all 0.6s;
+}
+
+.checkbox-wrapper .check {
+    fill: none;
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+    stroke-dashoffset: 22;
+    stroke-dasharray: 22;
+    transition: ease all 0.6s;
+    -webkit-transition: ease all 0.6s;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    margin: 0;
+    opacity: 0;
+    -appearance: none;
+    /* -webkit-appearance: none; */
+}
+
+.checkbox-wrapper input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked+svg .background {
+    fill: #088178;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked+svg .stroke {
+    stroke-dashoffset: 0;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked+svg .check {
+    stroke-dashoffset: 0;
+}
+
+
+.nextStores2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 5%; */
+    margin-right: -8%;
+}
+.woman-product img {
+    height: 9vw;
+}
+
+.button2 .text {
+    color: white;
+    font-weight: 700;
+    font-size: large;
+    transition: 400ms;
+}
+@media (max-width: 426px) {
+
+    #twoCol {
+        margin-top: 2vw;
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .main-container {
+        max-width: 90%;
+    }
+
+    .qty-input {
+        width: 15vw;
+        height: 3.5vw;
+    }
+    .chooseQty {
+        margin-top: 9vw;
+        position: relative;
+        bottom: 25vw;
+    }
+    .woman-product img {
+        height: 35vw;
+        width: 35vw;
+    }
+    .woman-product .price {
+        text-align: center;
+        margin-left: 30vw;
+    }
+    .totalPrice {
+        font-size: x-large;
+        font-weight: bolder;
+    }
+    .button2 .text {
+
+        font-size: medium;
+
+    }
+}
